@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>NovoBank</title>
+</head>
+<body>
+    <div class="menu-top">
+        <div class="menu-left">
+            <img src="logo.jpg" alt="" width="200px" height="100px">
+        </div>
+        <div class="menu-right">
+            <button><a href="">OTWÓRZ KONTO</a></button>
+            <button><a href="">WEŹ KREDYT</a></button>
+            <button onclick="openForm()">ZALOGUJ SIĘ</button>
+        </div>
+    </div>
+
+    <div class="login-form" id="loginForm">
+        <form action="./login.php" method="post" class="form-container">
+            <h1>Logowanie</h1>
+            <label for="loginID">Login</label>
+            <input type="text" name="loginid" required>
+
+            <label for="psw">Hasło</label>
+            <input type="password" name="psw" required>
+
+            <button type="submit" class="btn">Zaloguj się</button>
+            <button type="button" class="btn cancel" onclick="closeForm()">Zamknij</button>
+        </form>
+    </div>
+    <script>
+        function openForm(){
+            document.getElementById("loginForm").style.display = "block";
+        }
+    
+        function closeForm(){
+            document.getElementById("loginForm").style.display = "none";
+        }
+    </script>
+    
+</body>
+</html>

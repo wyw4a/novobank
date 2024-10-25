@@ -1,0 +1,85 @@
+.menu-top{
+    overflow: hidden;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    
+}
+.menu-left{
+    width: 35%;
+    
+    
+}
+.menu-right{
+    width: 35%;
+    
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: right;
+}
+.menu-right button{
+    display: block;
+    background-color: white;
+    text-align: center;
+    text-decoration: none;
+    padding: 15px;
+    margin: 5px;
+    height: fit-content;
+    border: 2px solid green;
+    border-radius: 5px;
+    color: black;
+    cursor: pointer;
+}
+.menu-right a{
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.login-form{
+    display: none;
+    width: 15%;
+    border: 3px solid black;
+    z-index: 9;
+    margin: auto;
+    text-align: center;
+}
+.form-container{
+    max-width: 300px;
+    padding: 10px;
+    background-color: white;
+}
+.form-container input[type=text], .form-container input[type=password]{
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background-color: #f1f1f1;
+    border-radius: 15px;
+}
+.form-container .btn{
+    background-color: green;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom: 10px;
+    opacity: 0.8;
+    border-radius: 15px;
+}
+.form-container .cancel{
+    background-color: red;
+}
+
+
+
