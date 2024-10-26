@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styleLoginPage.css">
+    <title>NovoBank</title>
+</head>
+<body>
+    <div class="menu-top">
+        <div class="menu-left">
+            <img src="logo.png" alt="" width="200px" height="100px">
+        </div>
+        <div class="menu-right">
+            <button><a href="">OTWÓRZ KONTO</a></button>
+            <button><a href="">WEŹ KREDYT</a></button>
+            <button><a href="">ZALOGUJ SIĘ</a></button>
+        </div>
+    </div>
+
+    <h1 class="text-center">Zaloguj się do bankowości online</h1>
+    <form action="./login.php" method="post" class="form-container">
+        <label for="loginid">Login</label>
+        <input type="text" name="loginid" required>
+        
+        <label for="psw">Hasło</label>
+        <input type="password" name="psw" required>
+        
+        <button type="submit">Zaloguj się!</button>
+    </form>
+
+</body>
+</html>

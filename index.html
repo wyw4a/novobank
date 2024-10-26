@@ -4,42 +4,82 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
     <title>NovoBank</title>
 </head>
 <body>
     <div class="menu-top">
         <div class="menu-left">
-            <img src="logo.jpg" alt="" width="200px" height="100px">
+            <img src="logo.png" alt="" width="200px" height="100px">
         </div>
         <div class="menu-right">
             <button><a href="">OTWÓRZ KONTO</a></button>
             <button><a href="">WEŹ KREDYT</a></button>
-            <button onclick="openForm()">ZALOGUJ SIĘ</button>
+            <button><a href="./login_page.html">ZALOGUJ SIĘ</a></button>
         </div>
     </div>
 
-    <div class="login-form" id="loginForm">
-        <form action="./login.php" method="post" class="form-container">
-            <h1>Logowanie</h1>
-            <label for="loginID">Login</label>
-            <input type="text" name="loginid" required>
-
-            <label for="psw">Hasło</label>
-            <input type="password" name="psw" required>
-
-            <button type="submit" class="btn">Zaloguj się</button>
-            <button type="button" class="btn cancel" onclick="closeForm()">Zamknij</button>
-        </form>
-    </div>
-    <script>
-        function openForm(){
-            document.getElementById("loginForm").style.display = "block";
-        }
     
-        function closeForm(){
-            document.getElementById("loginForm").style.display = "none";
-        }
-    </script>
+    <div class="main-center">
+
+        <h1 class="text-center">NovoBank - Nowoczesny system bankowości</h1>
+
+        <div class="main-content-box">
+
+        <h3>Witamy w NovaBank!</h3>
+        <p>Twoje zaufanie i wygoda są dla nas najważniejsze. Jako bank z nowoczesnym podejściem, oferujemy Ci kompleksowe rozwiązania finansowe, które spełnią Twoje oczekiwania i pomogą osiągnąć zamierzone cele.</p>
+        </div>
+
+        <div class="main-content-box">
+
+
+        
+        <h2><span class="green-color">Jakie produkty bankowe</span> znajdziesz w naszym banku?</h2>
+        <p>Zobacz, co m.in znajdziesz w NovaBank</p>
+        
+        <ul class="offer">
+            <li><i class="fa-solid fa-check"></i>Konto bez opłat</li>
+            <li><i class="fa-solid fa-check"></i>Fundusz Wsparcia Kredytobiorców</li>
+            <li><i class="fa-solid fa-check"></i>Limit Kredytowy</li>
+            <li><i class="fa-solid fa-check"></i>e-Kredyt</li>
+            <li><i class="fa-solid fa-check"></i>Ubezpieczenie życia i majątku</li>
+            <li><i class="fa-solid fa-check"></i>Ubezpieczenia samochodów firmowych</li>
+            <li><i class="fa-solid fa-check"></i>Lokaty</li>
+            <li><i class="fa-solid fa-check"></i>Konto Walutowe</li>
+        </ul>
+        </div>
+
+        <div class="main-content-box">
+        <h2><span class="green-color">Dlaczego warto</span> wybrać NovaBank?</h2>
+        <ul class="offer">
+            <li><i class="fa-solid fa-check"></i>Nowoczesna platforma online: nasza zaawansowana platforma internetowa umożliwia Ci dostęp do Twoich finansów w dowolnym miejscu i czasie. Sprawdź stan konta, wykonuj przelewy, inwestuj środki – wszystkie operacje wykonasz nie wychodząc z domu.</li>
+            <li><i class="fa-solid fa-check"></i>Bogata oferta produktów: niezależnie od tego, czy szukasz rachunku osobistego, kredytu hipotecznego czy planu oszczędnościowego, mamy dla Ciebie odpowiednie rozwiązanie. Nasza różnorodna oferta produktów finansowych dostosowana jest do wielu potrzeb i sytuacji życiowych.</li>
+            <li><i class="fa-solid fa-check"></i>Bezpieczeństwo: Twoje bezpieczeństwo to dla nas priorytet. Wykorzystujemy najnowsze technologie ochrony danych, abyś mógł spokojnie korzystać z naszych usług. Monitorujemy transakcje, chronimy Twoją prywatność i dbamy o poufność.</li>
+            <li><i class="fa-solid fa-check"></i>Doradztwo: nasz zespół doświadczonych doradców bankowych jest gotowy służyć Ci swoją wiedzą i doświadczeniem. Bez względu na to, czy planujesz inwestycje, czy chcesz zabezpieczyć przyszłość swojej rodziny, możesz liczyć na nasze wsparcie.</li>
+        </ul>
+        </div>
+        <div class="main-content-box">
+        <h2><span class="green-color">Kto może skorzystać</span> z oferty NovaBank</h2>
+        <ul class="offer">
+            <li><i class="fa-solid fa-check"></i>Klienci indywidualni: bez względu na to, czy jesteś studentem, pracownikiem, emerytem czy przedsiębiorcą, nasza oferta produktów finansowych została stworzona, aby spełnić Twoje potrzeby. Oferujemy rachunki osobiste, kredyty, lokaty, konta oszczędnościowe i wiele innych opcji dostosowanych do Twoich oczekiwań.</li>
+            <li><i class="fa-solid fa-check"></i>Małe i średnie przedsiębiorstwa: jeśli prowadzisz firmę, bank spółdzielczy GBSBank może być Twoim partnerem biznesowym. Zapewniamy wsparcie finansowe w postaci kredytów inwestycyjnych, kont firmowych, usług płatniczych i doradztwa finansowego, aby pomóc Ci w rozwijaniu działalności.</li>
+            <li><i class="fa-solid fa-check"></i>Rodziny: dbamy o Twoje potrzeby i bezpieczeństwo Twojej rodziny. Nasze produkty pozwalają planować przyszłość Twoich bliskich.</li>
+            <li><i class="fa-solid fa-check"></i>Pracownicy korporacyjni: współpracujemy z firmami, oferując pakiet usług bankowych dla pracowników. Możemy zapewnić wygodne i korzystne warunki dla Twojej organizacji oraz zespołu.</li>
+        </ul>
+        </div>
+        <div class="main-content-box">
+        <h2><span class="green-color">Bank NovaBank</span> - skorzystaj z naszych usług!</h2>
+        <p>Dołącz do NovaBank już dziś i zoabcz, jak łatwo i efektywnie zarządzać swoimi finansami. Dziękujemy za Twoje zaufanie. Zapraszamy do skorzystania z naszych usług.</p>
+
+        </div>
+    </div>
+    <footer>
+        <p>Strona została stworzona wyłącznie w celach edukacyjnych, mając na celu przybliżenie użytkownikom aspektów działania systemów bankowych, funkcjonalności oferowanych przez banki oraz metod zapewnienia bezpieczeństwa w bankowości elektronicznej. Materiały, układ graficzny oraz informacje zawarte na stronie są symulacją i nie mają na celu naśladowania żadnego istniejącego banku ani instytucji finansowej.
+
+            Zastrzegamy, że zawartość strony nie jest rzeczywistą ofertą finansową ani też nie przedstawia rzeczywistych usług bankowych. Strona ma charakter wyłącznie dydaktyczny, służy pogłębieniu wiedzy z zakresu bankowości i bezpieczeństwa finansowego, a wszelkie dane przedstawione na niej są fikcyjne. Wszelkie nazwy, logotypy oraz elementy graficzne zostały stworzone wyłącznie na potrzeby edukacyjne.
+            
+            Podstawa prawna: Zgodnie z art. 16 ust. 2 ustawy o prawie autorskim i prawach pokrewnych, wykorzystywanie materiałów o charakterze dydaktycznym i edukacyjnym jest dozwolone w ramach tzw. dozwolonego użytku edukacyjnego. Wszystkie treści zamieszczone na tej stronie internetowej zostały stworzone w duchu edukacyjnym i nie mają na celu komercyjnego wykorzystywania w działalności gospodarczej.</p>
+    </footer>
     
 </body>
 </html>
