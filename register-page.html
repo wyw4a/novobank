@@ -19,17 +19,28 @@
         </div>
     </div>
 
-    <h1 class="text-center">Zaloguj się do bankowości online</h1>
-    <form action="./login.php" method="post" class="form-container">
+    <h1 class="text-center">Otwórz konto w naszej bankowości</h1>
+    <form action="./register.php" method="post" class="form-container">
+
+        <label for="loginid">Pesel</label>
+        <input type="text" name="pesel" required maxlength="11" minlength="11">
+
+        <label for="loginid">Imię</label>
+        <input type="text" name="user_name" required >
+
+        <label for="loginid">Nazwisko</label>
+        <input type="text" name="user_surname" required>
+
+        <label for="loginid">Miejsce urodzenia</label>
+        <input type="text" name="user_birth_place" required>
 
         <label for="loginid">Login</label>
-        <input type="text" name="loginid" required>
-
+        <input type="text" name="loginid" required maxlength="8">
         
         <label for="psw">Hasło</label>
         <input type="password" name="psw" required>
         
-        <button type="submit">Zaloguj się!</button>
+        <button type="submit">Otwórz konto!</button>
     </form>
 
 </body>

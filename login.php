@@ -1,4 +1,6 @@
 <?php
+session_start();
+
 $servername = "localhost";
 $username = "root";
 $password = "";
@@ -11,20 +13,24 @@ if ($conn->connect_error) {
 }
 
 if (isset($_POST['loginid']) && isset($_POST['psw'])) {
-
     $name = $_POST['loginid'];
     $psw = $_POST['psw'];
 
     
-    $sql = "SELECT * FROM users WHERE login_id='$name' AND password='$psw' ";
-    $result = $conn->query($sql);
+    $stmt = $conn->prepare("SELECT loginid FROM users WHERE loginid = ? AND psw = ?");
+    $stmt->bind_param("ss", $name, $psw);
+    $stmt->execute();
+    $result = $stmt->get_result();
 
     if ($result->num_rows > 0) {
-        header("Location: konto.html");
+        $_SESSION['loginid'] = $name;
+        header("Location: bank.php");  
         exit();
     } else {
         echo "Niepoprawny login lub hasło.";
     }
+
+    $stmt->close();
 } else {
     echo "Wprowadź login i hasło";
 }

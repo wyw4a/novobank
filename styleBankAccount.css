@@ -31,7 +31,6 @@
     border-radius: 5px;
     color: black;
     cursor: pointer;
-   
 }
 .menu-right a{
     text-decoration: none;
@@ -44,52 +43,3 @@
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
 }
-
-
-body{
-    background-color: hsl(0, 12%, 92%);
-}
-
-
-.offer{
-    list-style-type: none;
-    
-}
-.offer li .fa-check{
-    color: green;
-    margin-right: 25px;
-}
-.text-center{
-    text-align: center;
-    padding: 30px;
-    font-size: 350%;
-}
-.green-color{
-    color: green;
-}
-
-.main-center{
-    width: 90%;
-    margin: auto;
-    
-}
-.main-content-box{
-    padding: 15px;
-    margin-top: 1%;
-}
-.main-content-box p, li{
-    color: gray;
-    font-size: 124%;
-    padding: 11px 0px;
-}
-.main-content-box h1,h2,h3{
-    font-size: 212%;
-}
-footer{
-    background-color: #f1f1f1;
-    padding: 50px;
-    
-}
-
-
-
