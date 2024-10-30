@@ -25,7 +25,8 @@ if (isset($_POST['loginid']) && isset($_POST['psw'])) {
     $stmt->bind_param("ssssss", $pesel, $uname, $usurname, $ubp, $name, $psw);
 
     if ($stmt->execute()) {
-        echo "Twoje konto zostało utworzone. Możesz się teraz zalogować.";
+        header("Location: register-page.html?error=1");
+        exit();
     } else {
         echo "Wystąpił błąd podczas tworzenia konta: " . $stmt->error;
     }

@@ -27,7 +27,8 @@ if (isset($_POST['loginid']) && isset($_POST['psw'])) {
         header("Location: bank.php");  
         exit();
     } else {
-        echo "Niepoprawny login lub hasło.";
+        header("Location: login_page.html?error=1");
+        exit();
     }
 
     $stmt->close();

@@ -19,7 +19,9 @@
         </div>
     </div>
 
+    <div class="main-center">
     <h1 class="text-center">Zaloguj się do bankowości online</h1>
+
     <form action="./login.php" method="post" class="form-container">
 
         <label for="loginid">Login</label>
@@ -31,6 +33,41 @@
         
         <button type="submit">Zaloguj się!</button>
     </form>
+
+
+
+    <div class="login_error" id="login_error">
+        Niepoprawny login lub hasło.
+    </div>
+
+
+
+
+    </div>
+    <footer>
+        <p>Strona została stworzona wyłącznie w celach edukacyjnych, mając na celu przybliżenie użytkownikom aspektów działania systemów bankowych, funkcjonalności oferowanych przez banki oraz metod zapewnienia bezpieczeństwa w bankowości elektronicznej. Materiały, układ graficzny oraz informacje zawarte na stronie są symulacją i nie mają na celu naśladowania żadnego istniejącego banku ani instytucji finansowej.
+
+            Zastrzegamy, że zawartość strony nie jest rzeczywistą ofertą finansową ani też nie przedstawia rzeczywistych usług bankowych. Strona ma charakter wyłącznie dydaktyczny, służy pogłębieniu wiedzy z zakresu bankowości i bezpieczeństwa finansowego, a wszelkie dane przedstawione na niej są fikcyjne. Wszelkie nazwy, logotypy oraz elementy graficzne zostały stworzone wyłącznie na potrzeby edukacyjne.
+            
+            Podstawa prawna: Zgodnie z art. 16 ust. 2 ustawy o prawie autorskim i prawach pokrewnych, wykorzystywanie materiałów o charakterze dydaktycznym i edukacyjnym jest dozwolone w ramach tzw. dozwolonego użytku edukacyjnego. Wszystkie treści zamieszczone na tej stronie internetowej zostały stworzone w duchu edukacyjnym i nie mają na celu komercyjnego wykorzystywania w działalności gospodarczej.</p>
+    </footer>
+    <script>
+
+        function showLoginError(){
+            const login_error = document.getElementById('login_error');
+            login_error.classList.add('login_error_show');
+
+            setTimeout(() => {
+                login_error.classList.remove('login_error_show');
+            }, 3000)
+        }
+
+        const urlCheck = new URLSearchParams(window.location.search);
+        if(urlCheck.has('error')) {
+            showLoginError();
+        }
+
+    </script>
 
 </body>
 </html>

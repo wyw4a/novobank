@@ -42,6 +42,10 @@ if($result->num_rows > 0){
 
 $stmt->close();
 $conn->close();
+
+
+
+
 ?>
 
 <!DOCTYPE html>
@@ -65,10 +69,33 @@ $conn->close();
         </div>
     </div>
 
-    <h1>Witaj, <span style="color: green;"><?php echo htmlspecialchars($user_name); ?></span></h1>
-    <h1>Imię: <?php echo htmlspecialchars($user_name); ?></h1>
-    <h1>Nazwisko: <?php echo htmlspecialchars($user_surname); ?></h1>
-    <h1>Stan Konta: <?php echo htmlspecialchars($balance); ?></h1>
+    <div class="main-center">
+    <h1 style="font-size: 300%; padding: 15px;">Witaj, <span style="color: green;"><?php echo htmlspecialchars($user_name);?> </span></h1>
+    <h1>Stan konta: <span style="color: green;"><?php echo htmlspecialchars($balance);?></h1>
+
+    <form action="./transfersystem.php" method="post">
+
+    <label for="">Do kogo:</label>
+    <input type="text" name="recipient">
+    <label for="">Kwota</label>
+    <input type="text" name="sum">
+    <button type="submit">wyślij siano</button>
+    </form>
+    </div>
+
+
+
+
+    
+    <footer>
+        <p>Strona została stworzona wyłącznie w celach edukacyjnych, mając na celu przybliżenie użytkownikom aspektów działania systemów bankowych, funkcjonalności oferowanych przez banki oraz metod zapewnienia bezpieczeństwa w bankowości elektronicznej. Materiały, układ graficzny oraz informacje zawarte na stronie są symulacją i nie mają na celu naśladowania żadnego istniejącego banku ani instytucji finansowej.
+
+            Zastrzegamy, że zawartość strony nie jest rzeczywistą ofertą finansową ani też nie przedstawia rzeczywistych usług bankowych. Strona ma charakter wyłącznie dydaktyczny, służy pogłębieniu wiedzy z zakresu bankowości i bezpieczeństwa finansowego, a wszelkie dane przedstawione na niej są fikcyjne. Wszelkie nazwy, logotypy oraz elementy graficzne zostały stworzone wyłącznie na potrzeby edukacyjne.
+            
+            Podstawa prawna: Zgodnie z art. 16 ust. 2 ustawy o prawie autorskim i prawach pokrewnych, wykorzystywanie materiałów o charakterze dydaktycznym i edukacyjnym jest dozwolone w ramach tzw. dozwolonego użytku edukacyjnego. Wszystkie treści zamieszczone na tej stronie internetowej zostały stworzone w duchu edukacyjnym i nie mają na celu komercyjnego wykorzystywania w działalności gospodarczej.</p>
+    </footer>
+
+
     
 </body>
 </html>
